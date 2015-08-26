@@ -1,0 +1,33 @@
+{
+  "name": "primus-analytics",
+  "version": "1.0.0",
+  "description": "Deep integration of Google Analytics in to Primus",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/primus/primus-analytics.git"
+  },
+  "keywords": [
+    "google",
+    "analytics",
+    "stats",
+    "tracking",
+    "primus",
+    "real-time"
+  ],
+  "author": "Arnout Kazemier",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/primus/primus-analytics/issues"
+  },
+  "homepage": "https://github.com/primus/primus-analytics#readme",
+  "devDependencies": {
+    "assume": "1.2.5",
+    "mocha": "2.2.5",
+    "pre-commit": "1.1.1",
+    "primus": "3.2.1"
+  }
+}
