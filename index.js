@@ -13,6 +13,9 @@ exports.client = function client(primus, options) {
   var analytics = options.analytics || {}
     , reconnect = false;
 
+  analytics.category = analytics.category || 'primus';
+  analytics.events = analytics.events || {};
+
   /**
    * Small wrapper which makes it easier to add trackers in event listeners.
    *
@@ -21,7 +24,7 @@ exports.client = function client(primus, options) {
    * @api private
    */
   function tracker(name, fn) {
-    return function track() {
+    return function tracks() {
       var value;
 
       if (fn && (value = fn()) === false) return; // Ignored by callback.
@@ -39,8 +42,8 @@ exports.client = function client(primus, options) {
    */
   function track(name, value) {
     var payload = {
-      eventCategory: analytics.category || 'primus',
       eventAction: analytics.events[name] || name,
+      eventCategory: analytics.category,
       hitType: 'event',
 
       //
@@ -52,7 +55,6 @@ exports.client = function client(primus, options) {
       //
       nonInteraction: 1
     };
-
     //
     // Make sure that Google Analytics is loaded before we continue here as we
     // don't want to generate errors by calling unknown functions. Continuous
