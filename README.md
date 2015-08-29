@@ -69,6 +69,9 @@ supported:
   `false` we assume that you want to prevent this event from being tracked so it
   will not be sent to Google Analytics. This is also useful to block highly
   frequent events so you don't reach your event limit in Google Analytics.
+- *app* With the exception reporting that we trigger on the `error` event, we
+  also send the name of the application, the app property allows you to
+  configure this name. If defaults to `primus`.
 
 ```js
 var primus = new Primus('http://your-website.here', {

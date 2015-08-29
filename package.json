@@ -1,6 +1,6 @@
 {
   "name": "primus-analytics",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Deep integration of Google Analytics in to Primus",
   "main": "index.js",
   "scripts": {
