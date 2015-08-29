@@ -54,7 +54,7 @@ describe('analytics', function () {
       assume(exception).to.equal('exception');
       assume(payload).to.be.an('object');
       assume(payload.exDescription).to.include('ECONNREFUSED');
-      assume(payload.appName).to.equal('chat');
+      assume(payload.appName).to.equal('primus');
       assume(payload.exFatal).to.equal(true);
 
       next();

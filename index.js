@@ -14,6 +14,7 @@ exports.client = function client(primus, options) {
     , reconnect = false;
 
   analytics.category = analytics.category || 'primus';
+  analytics.app = analytics.app || 'primus';
   analytics.events = analytics.events || {};
 
   /**
@@ -100,8 +101,8 @@ exports.client = function client(primus, options) {
 
     ga('send', 'exception', {
       'exDescription': err.message,
-      'exFatal': true,
-      'appName': 'chat'
+      'appName': analytics.app,
+      'exFatal': true
     });
   });
 
