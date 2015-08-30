@@ -259,4 +259,22 @@ describe('analytics', function () {
     });
     socket.on('open', socket.end);
   });
+
+  it('allows to customize the app name', function (next) {
+    global.ga = function ga(command, exception, payload) {
+      assume(command).to.equal('send');
+      assume(exception).to.equal('exception');
+      assume(payload).to.be.an('object');
+      assume(payload.appName).to.equal('foo');
+
+      next();
+    };
+
+    primus.destroy(function () {
+      new Socket(server.url, {
+        analytics: { app: 'foo' },
+        strategy: false
+      });
+    });
+  });
 });
