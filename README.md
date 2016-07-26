@@ -31,11 +31,11 @@ var primus = new Primus(server);
 ```
 
 To add this plugin to your created Primus server instance you need to use the
-`.use` method which accepts a name and the required plugin as argument. The name
+`.plugin` method which accepts a name and the required plugin as argument. The name
 can be anything you want. It's there for lookup and debugging purposes.
 
 ```js
-primus.use('google analytics', require('primus-analaytics'));
+primus.plugin('google analytics', require('primus-analaytics'));
 ```
 
 Please note that after adding this plugin, you should re-generate the client
