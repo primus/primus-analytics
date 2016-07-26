@@ -27,9 +27,9 @@
   "devDependencies": {
     "assume": "1.4.x",
     "faye-websocket": "0.11.x",
-    "mocha": "2.4.x",
+    "mocha": "2.5.x",
     "pre-commit": "1.1.x",
-    "primus": "5.0.x",
+    "primus": "6.0.x",
     "primus-emit": "1.0.x",
     "primus-emitter": "3.1.x"
   }
