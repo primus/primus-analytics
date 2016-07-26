@@ -93,7 +93,7 @@ describe('analytics', function () {
   it('tracks the events sent wint primus-emit', function (next) {
     var socket;
 
-    primus.use('emitter', 'primus-emit');
+    primus.plugin('emitter', 'primus-emit');
 
     Socket = primus.Socket;
     Socket.prototype.ark.analytics = analytics.client;
@@ -123,7 +123,7 @@ describe('analytics', function () {
   it('tracks the events sent with primus-emitter', function (next) {
     var socket;
 
-    primus.use('emitter', 'primus-emitter');
+    primus.plugin('emitter', 'primus-emitter');
 
     Socket = primus.Socket;
     Socket.prototype.ark.analytics = analytics.client;
