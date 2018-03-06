@@ -13,7 +13,7 @@ describe('analytics', function () {
 
   beforeEach(function each(next) {
     server = http.createServer();
-    primus = new Primus(server, { transformer: 'faye' });
+    primus = new Primus(server);
 
     Socket = primus.Socket;
     Socket.prototype.ark.analytics = analytics.client;
@@ -61,7 +61,12 @@ describe('analytics', function () {
     };
 
     primus.destroy(function () {
-      new Socket(server.url, { strategy: false });
+      new Socket(server.url, {
+        analytics: {
+          events: { close: false }
+        },
+        strategy: false
+      });
     });
   });
 
@@ -272,7 +277,10 @@ describe('analytics', function () {
 
     primus.destroy(function () {
       new Socket(server.url, {
-        analytics: { app: 'foo' },
+        analytics: {
+          events: { close: false },
+          app: 'foo'
+        },
         strategy: false
       });
     });
