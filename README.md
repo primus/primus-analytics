@@ -1,6 +1,6 @@
 # primus-analytics
 
-[![Version npm][npm-primus-analytics-badge]][npm-primus-analytics][![Build Status][travis-primus-analytics-badge]][travis-primus-analytics][![Dependencies][david-primus-analytics-badge]][david-primus-analytics][![Coverage Status][coverage-primus-analytics-badge]][coverage-primus-analytics][![IRC channel][irc-badge]][irc]
+[![Version npm][npm-primus-analytics-badge]][npm-primus-analytics][![Build Status][ci-primus-analytics-badge]][ci-primus-analytics][![Dependencies][david-primus-analytics-badge]][david-primus-analytics][![Coverage Status][coverage-primus-analytics-badge]][coverage-primus-analytics][![IRC channel][irc-badge]][irc]
 
 Integrates Google Analytics deeply in the Primus client by using its event
 tracking functionality. This allows you to get an insight on how things are
@@ -87,8 +87,8 @@ var primus = new Primus('http://your-website.here', {
 
 [npm-primus-analytics-badge]: https://img.shields.io/npm/v/primus-analytics.svg?style=flat-square
 [npm-primus-analytics]: http://browsenpm.org/package/primus-analytics
-[travis-primus-analytics-badge]: https://img.shields.io/travis/primus/primus-analytics/master.svg?style=flat-square
-[travis-primus-analytics]: https://travis-ci.org/primus/primus-analytics
+[ci-primus-analytics-badge]: https://img.shields.io/github/workflow/status/primus/primus-analytics/CI/master?label=CI&style=flat-square
+[ci-primus-analytics]: https://github.com/primus/primus-analytics/actions?query=workflow%3ACI+branch%3Amaster
 [david-primus-analytics-badge]: https://img.shields.io/david/primus/primus-analytics.svg?style=flat-square
 [david-primus-analytics]: https://david-dm.org/primus/primus-analytics
 [coverage-primus-analytics-badge]: https://img.shields.io/coveralls/primus/primus-analytics/master.svg?style=flat-square
