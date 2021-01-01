@@ -86,7 +86,7 @@ var primus = new Primus('http://your-website.here', {
 ```
 
 [npm-primus-analytics-badge]: https://img.shields.io/npm/v/primus-analytics.svg?style=flat-square
-[npm-primus-analytics]: http://browsenpm.org/package/primus-analytics
+[npm-primus-analytics]: https://www.npmjs.com/package/primus-analytics
 [ci-primus-analytics-badge]: https://img.shields.io/github/workflow/status/primus/primus-analytics/CI/master?label=CI&style=flat-square
 [ci-primus-analytics]: https://github.com/primus/primus-analytics/actions?query=workflow%3ACI+branch%3Amaster
 [david-primus-analytics-badge]: https://img.shields.io/david/primus/primus-analytics.svg?style=flat-square
