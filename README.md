@@ -1,6 +1,6 @@
 # primus-analytics
 
-[![Version npm][npm-primus-analytics-badge]][npm-primus-analytics][![Build Status][ci-primus-analytics-badge]][ci-primus-analytics]
+[![Version npm][npm-primus-analytics-badge]][npm-primus-analytics][![CI][ci-primus-analytics-badge]][ci-primus-analytics]
 
 Integrates Google Analytics deeply in the Primus client by using its event
 tracking functionality. This allows you to get an insight on how things are
@@ -87,7 +87,7 @@ var primus = new Primus('http://your-website.here', {
 
 [npm-primus-analytics-badge]: https://img.shields.io/npm/v/primus-analytics.svg?style=flat-square
 [npm-primus-analytics]: https://www.npmjs.com/package/primus-analytics
-[ci-primus-analytics-badge]: https://img.shields.io/github/workflow/status/primus/primus-analytics/CI/master?label=CI&style=flat-square
+[ci-primus-analytics-badge]: https://img.shields.io/github/actions/workflow/status/primus/primus-analytics/ci.yml?branch=master&label=CI&style=flat-square
 [ci-primus-analytics]: https://github.com/primus/primus-analytics/actions?query=workflow%3ACI+branch%3Amaster
 
 ## License
